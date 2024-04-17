@@ -1,4 +1,14 @@
+res://scenes/player/player_small.tscn
+res://scenes/player/character_controls.gd
 res://scenes/main.tscn
 res://scenes/player/player_big.tscn
-res://scenes/player/player_small.tscn
 res://scenes/level/level_tile_map.tscn
+res://scenes/blocks/block.gd
+res://scenes/effects/debris.tscn
+res://scenes/effects/debris_piece.tscn
+res://scenes/effects/debris.gd
+res://scenes/PreloadScenes.gd
+res://scenes/blocks/block.tscn
+res://scenes/player/player_big.gd
+res://scenes/enemies/enemy_01.tscn
+res://scenes/player/player_small.gd

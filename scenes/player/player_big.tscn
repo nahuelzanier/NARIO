@@ -28,7 +28,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -16.25)]
 }
 
 [sub_resource type="Animation" id="Animation_vndpv"]
@@ -56,7 +56,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -15.625)]
 }
 
 [sub_resource type="Animation" id="Animation_f1mm0"]
@@ -112,7 +112,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -15.625)]
 }
 
 [sub_resource type="Animation" id="Animation_btbd1"]
@@ -140,7 +140,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -15.625)]
 }
 
 [sub_resource type="Animation" id="Animation_jc0td"]
@@ -168,7 +168,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -15.625)]
 }
 
 [sub_resource type="Animation" id="Animation_yptv2"]
@@ -197,7 +197,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-0.375, -17.5)]
+"values": [Vector2(-0.5, -15.625)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_svh1g"]
@@ -212,7 +212,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4268"]
-size = Vector2(0.75, 3)
+size = Vector2(7, 3.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nhiyf"]
 size = Vector2(13, 1)
@@ -231,6 +231,7 @@ script = ExtResource("1_cyjvj")
 zoom = Vector2(3, 3)
 
 [node name="CollisionPolygon2D" parent="." instance=ExtResource("3_v04q2")]
+z_index = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
@@ -251,7 +252,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HeadPunch"]
-position = Vector2(-0.375, -17.5)
+position = Vector2(-0.5, -16.25)
 shape = SubResource("RectangleShape2D_n4268")
 
 [node name="FootStomp" type="Area2D" parent="."]

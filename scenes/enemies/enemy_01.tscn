@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b70peewtlb24p" path="res://assets/enemy_01.png" id="1_ymjf1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8f3we"]
-size = Vector2(16, 15)
+size = Vector2(14, 15)
 
 [sub_resource type="Animation" id="Animation_w1brc"]
 length = 0.001

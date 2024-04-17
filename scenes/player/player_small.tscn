@@ -137,8 +137,8 @@ _data = {
 "walk": SubResource("Animation_yptv2")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wmrbn"]
-size = Vector2(0, 0.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qucfd"]
+size = Vector2(6, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sckxt"]
 size = Vector2(12, 1)
@@ -154,6 +154,7 @@ script = ExtResource("1_4xrcf")
 zoom = Vector2(3, 3)
 
 [node name="CollisionPolygon2D" parent="." instance=ExtResource("3_5ogmh")]
+z_index = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
@@ -172,8 +173,9 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HeadPunch"]
-position = Vector2(0, -6)
-shape = SubResource("RectangleShape2D_wmrbn")
+z_index = 1
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_qucfd")
 
 [node name="FootStomp" type="Area2D" parent="."]
 collision_layer = 2

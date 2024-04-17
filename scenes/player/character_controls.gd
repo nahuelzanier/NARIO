@@ -10,6 +10,7 @@ const COLLISION_POLYGON_BIG_PLAYER = preload("res://scenes/player/collision_poly
 var ducking = false
 var can_stand_up = 0
 var is_big
+var block_punched = false
 
 const max_speed = 110
 const max_run_speed = 190
@@ -21,13 +22,14 @@ const jummp_base = 73
 const jump_speed_coef = 77
 var jump_reducer = 1
 
-var dir = 0.0
+#var dir = 0.0
 var last_dir = 0.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
 	if is_on_floor():
+		block_punched = false
 		jump_reducer = 1
 		duck()
 	falling(delta)

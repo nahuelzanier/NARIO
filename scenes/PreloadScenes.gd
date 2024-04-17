@@ -3,6 +3,9 @@ extends Node
 #TAGS
 var block = &"block"
 
+#EFFECTS
+const DEBRIS = preload("res://scenes/effects/debris.tscn")
+
 #PRELOAD
 const BLOCK = preload("res://scenes/blocks/block.tscn")
 const ENEMY_01 = preload("res://scenes/enemies/enemy_01.tscn")
