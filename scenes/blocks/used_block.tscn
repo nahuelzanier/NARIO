@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b758pdergqdxj"]
+
+[ext_resource type="Script" path="res://scenes/blocks/used_block.gd" id="1_8ll2u"]
+[ext_resource type="Texture2D" uid="uid://churprdx6xy4b" path="res://assets/used_block.png" id="2_kuiib"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oi04j"]
+size = Vector2(16, 16)
+
+[node name="BlockUsed" type="StaticBody2D"]
+collision_layer = 7
+collision_mask = 7
+script = ExtResource("1_8ll2u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+texture = ExtResource("2_kuiib")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oi04j")

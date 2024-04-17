@@ -1,0 +1,4 @@
+res://scenes/main.tscn
+res://scenes/player/player_big.tscn
+res://scenes/player/player_small.tscn
+res://scenes/level/level_tile_map.tscn

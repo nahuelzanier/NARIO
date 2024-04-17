@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ditsthv1qulte"]
+
+[ext_resource type="Script" path="res://scenes/PreloadScenes.gd" id="1_54fkx"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_tqxi5"]
+[ext_resource type="PackedScene" uid="uid://b4uthac7088mf" path="res://scenes/player/player.tscn" id="2_6ws3g"]
+[ext_resource type="PackedScene" uid="uid://2x8cuw3tl4qx" path="res://scenes/level/level_tile_map.tscn" id="3_7ocsw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_tqxi5")
+
+[node name="PreloadScenes" type="Node" parent="."]
+script = ExtResource("1_54fkx")
+
+[node name="TileMap" parent="PreloadScenes" instance=ExtResource("3_7ocsw")]
+visible = false
+
+[node name="Player" parent="." instance=ExtResource("2_6ws3g")]
+
+[node name="Level" type="Node2D" parent="."]
